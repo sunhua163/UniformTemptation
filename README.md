@@ -1,0 +1,7 @@
+# UniformTemptation
+MVVM Demo
+此代码只是简单的写啦一个collectionview界面
+时间有限，我会接着完善
+后面代码中将出现Realm数据库
+以及添加到favorite的功能，
+写完之后将会完全展示出函数响应式编程的强大
