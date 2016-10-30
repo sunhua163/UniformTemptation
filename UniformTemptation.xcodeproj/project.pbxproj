@@ -7,21 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40019E9F1DC4FEF8009142AA /* GirlCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40019E9E1DC4FEF8009142AA /* GirlCollectionViewCell.swift */; };
 		4021F29E1DC417C90084710D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021F29D1DC417C90084710D /* AppDelegate.swift */; };
-		4021F2A01DC417C90084710D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021F29F1DC417C90084710D /* ViewController.swift */; };
 		4021F2A31DC417C90084710D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4021F2A11DC417C90084710D /* Main.storyboard */; };
 		4021F2A51DC417C90084710D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4021F2A41DC417C90084710D /* Assets.xcassets */; };
 		4021F2A81DC417C90084710D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4021F2A61DC417C90084710D /* LaunchScreen.storyboard */; };
+		40713BB71DC47F91002DF5B8 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40713BB41DC47F91002DF5B8 /* BaseNavigationController.swift */; };
+		40713BB81DC47F91002DF5B8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40713BB51DC47F91002DF5B8 /* BaseViewController.swift */; };
+		40713BB91DC47F91002DF5B8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40713BB61DC47F91002DF5B8 /* MainViewController.swift */; };
+		40713BBC1DC480EB002DF5B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40713BBB1DC480EB002DF5B8 /* ViewController.swift */; };
+		40713BBE1DC4811E002DF5B8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40713BBD1DC4811E002DF5B8 /* ListViewController.swift */; };
+		40713BC01DC48326002DF5B8 /* Girl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40713BBF1DC48326002DF5B8 /* Girl.swift */; };
+		40B36A431DC44AAE006DB714 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B36A421DC44AAE006DB714 /* Constants.swift */; };
+		40B36A451DC44D3B006DB714 /* GlobalMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B36A441DC44D3B006DB714 /* GlobalMethods.swift */; };
+		40EDE5D21DC4B67F00ECF0F6 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EDE5D11DC4B67F00ECF0F6 /* ListViewModel.swift */; };
+		9CB0A9E4FF227693B3048200 /* Pods_UniformTemptation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623C1D83FEBA6854CE2922E9 /* Pods_UniformTemptation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0412B2B96A6F67AEEC2DACF4 /* Pods_Share_UniformTemptation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Share_UniformTemptation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		273BD93C18776CD47D7DD32E /* Pods-UniformTemptation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniformTemptation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UniformTemptation/Pods-UniformTemptation.debug.xcconfig"; sourceTree = "<group>"; };
+		40019E9E1DC4FEF8009142AA /* GirlCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GirlCollectionViewCell.swift; sourceTree = "<group>"; };
 		4021F29A1DC417C90084710D /* UniformTemptation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniformTemptation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4021F29D1DC417C90084710D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4021F29F1DC417C90084710D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4021F2A21DC417C90084710D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4021F2A41DC417C90084710D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4021F2A71DC417C90084710D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4021F2A91DC417C90084710D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40713BB41DC47F91002DF5B8 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		40713BB51DC47F91002DF5B8 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		40713BB61DC47F91002DF5B8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		40713BBB1DC480EB002DF5B8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40713BBD1DC4811E002DF5B8 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		40713BBF1DC48326002DF5B8 /* Girl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Girl.swift; sourceTree = "<group>"; };
+		40B36A421DC44AAE006DB714 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		40B36A441DC44D3B006DB714 /* GlobalMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalMethods.swift; sourceTree = "<group>"; };
+		40EDE5D11DC4B67F00ECF0F6 /* ListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		623C1D83FEBA6854CE2922E9 /* Pods_UniformTemptation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniformTemptation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B28CCF18AA3182B15D7F25A /* Pods-Share-UniformTemptation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Share-UniformTemptation.release.xcconfig"; path = "Pods/Target Support Files/Pods-Share-UniformTemptation/Pods-Share-UniformTemptation.release.xcconfig"; sourceTree = "<group>"; };
+		73D41775C92187777F8AF880 /* Pods-UniformTemptation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniformTemptation.release.xcconfig"; path = "Pods/Target Support Files/Pods-UniformTemptation/Pods-UniformTemptation.release.xcconfig"; sourceTree = "<group>"; };
+		EDDCA5F7757737FAB3118DAB /* Pods-Share-UniformTemptation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Share-UniformTemptation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Share-UniformTemptation/Pods-Share-UniformTemptation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +54,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB0A9E4FF227693B3048200 /* Pods_UniformTemptation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31C86A16034825FAA7CC82B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDDCA5F7757737FAB3118DAB /* Pods-Share-UniformTemptation.debug.xcconfig */,
+				6B28CCF18AA3182B15D7F25A /* Pods-Share-UniformTemptation.release.xcconfig */,
+				273BD93C18776CD47D7DD32E /* Pods-UniformTemptation.debug.xcconfig */,
+				73D41775C92187777F8AF880 /* Pods-UniformTemptation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4021F2911DC417C80084710D = {
 			isa = PBXGroup;
 			children = (
 				4021F29C1DC417C90084710D /* UniformTemptation */,
 				4021F29B1DC417C90084710D /* Products */,
+				31C86A16034825FAA7CC82B7 /* Pods */,
+				BC042AAC7C3F8CD56DC2AA87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +93,48 @@
 		4021F29C1DC417C90084710D /* UniformTemptation */ = {
 			isa = PBXGroup;
 			children = (
+				40713BB31DC47F59002DF5B8 /* 基础类 */,
 				4021F29D1DC417C90084710D /* AppDelegate.swift */,
-				4021F29F1DC417C90084710D /* ViewController.swift */,
+				40713BBA1DC480EB002DF5B8 /* 页面展示 */,
+				40B36A441DC44D3B006DB714 /* GlobalMethods.swift */,
+				40B36A421DC44AAE006DB714 /* Constants.swift */,
 				4021F2A11DC417C90084710D /* Main.storyboard */,
 				4021F2A41DC417C90084710D /* Assets.xcassets */,
 				4021F2A61DC417C90084710D /* LaunchScreen.storyboard */,
 				4021F2A91DC417C90084710D /* Info.plist */,
 			);
 			path = UniformTemptation;
+			sourceTree = "<group>";
+		};
+		40713BB31DC47F59002DF5B8 /* 基础类 */ = {
+			isa = PBXGroup;
+			children = (
+				40713BB41DC47F91002DF5B8 /* BaseNavigationController.swift */,
+				40713BB51DC47F91002DF5B8 /* BaseViewController.swift */,
+				40713BB61DC47F91002DF5B8 /* MainViewController.swift */,
+			);
+			path = "基础类";
+			sourceTree = "<group>";
+		};
+		40713BBA1DC480EB002DF5B8 /* 页面展示 */ = {
+			isa = PBXGroup;
+			children = (
+				40713BBB1DC480EB002DF5B8 /* ViewController.swift */,
+				40713BBD1DC4811E002DF5B8 /* ListViewController.swift */,
+				40019E9E1DC4FEF8009142AA /* GirlCollectionViewCell.swift */,
+				40EDE5D11DC4B67F00ECF0F6 /* ListViewModel.swift */,
+				40713BBF1DC48326002DF5B8 /* Girl.swift */,
+			);
+			path = "页面展示";
+			sourceTree = "<group>";
+		};
+		BC042AAC7C3F8CD56DC2AA87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0412B2B96A6F67AEEC2DACF4 /* Pods_Share_UniformTemptation.framework */,
+				623C1D83FEBA6854CE2922E9 /* Pods_UniformTemptation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4021F2AC1DC417C90084710D /* Build configuration list for PBXNativeTarget "UniformTemptation" */;
 			buildPhases = (
+				4346CB65AB026FE866122F7F /* [CP] Check Pods Manifest.lock */,
 				4021F2961DC417C80084710D /* Sources */,
 				4021F2971DC417C80084710D /* Frameworks */,
 				4021F2981DC417C80084710D /* Resources */,
+				968DA8923271D04C0D312614 /* [CP] Embed Pods Frameworks */,
+				8532EDE96D1FD7D2FB12F187 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +207,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4346CB65AB026FE866122F7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8532EDE96D1FD7D2FB12F187 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UniformTemptation/Pods-UniformTemptation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		968DA8923271D04C0D312614 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UniformTemptation/Pods-UniformTemptation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4021F2961DC417C80084710D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4021F2A01DC417C90084710D /* ViewController.swift in Sources */,
+				40EDE5D21DC4B67F00ECF0F6 /* ListViewModel.swift in Sources */,
+				40713BB91DC47F91002DF5B8 /* MainViewController.swift in Sources */,
 				4021F29E1DC417C90084710D /* AppDelegate.swift in Sources */,
+				40019E9F1DC4FEF8009142AA /* GirlCollectionViewCell.swift in Sources */,
+				40713BC01DC48326002DF5B8 /* Girl.swift in Sources */,
+				40B36A431DC44AAE006DB714 /* Constants.swift in Sources */,
+				40713BB71DC47F91002DF5B8 /* BaseNavigationController.swift in Sources */,
+				40B36A451DC44D3B006DB714 /* GlobalMethods.swift in Sources */,
+				40713BBC1DC480EB002DF5B8 /* ViewController.swift in Sources */,
+				40713BBE1DC4811E002DF5B8 /* ListViewController.swift in Sources */,
+				40713BB81DC47F91002DF5B8 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +391,7 @@
 		};
 		4021F2AD1DC417C90084710D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 273BD93C18776CD47D7DD32E /* Pods-UniformTemptation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UniformTemptation/Info.plist;
@@ -270,6 +404,7 @@
 		};
 		4021F2AE1DC417C90084710D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73D41775C92187777F8AF880 /* Pods-UniformTemptation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UniformTemptation/Info.plist;
@@ -299,6 +434,7 @@
 				4021F2AE1DC417C90084710D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
