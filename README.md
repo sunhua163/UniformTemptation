@@ -1,5 +1,6 @@
 # UniformTemptation
 MVVM Demo
+目前只有微量的Rx响应式代码
 此代码只是简单的写啦一个collectionview界面
 时间有限，我会接着完善
 后面代码中将出现Realm数据库
