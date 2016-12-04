@@ -8,6 +8,7 @@
 
 import Foundation
 import ObjectMapper
+import RxSwift
 /*
  对付程序员，还非得弄点流鼻血的出来 ^_^
  */
@@ -28,6 +29,10 @@ class Girl: Mappable{
     var time         = ""
     var title        = ""
     
+//    var favorite     = false
+    
+    var rx_favorite  = Variable(false)
+    
     required init?(map: Map) {
         
     }
@@ -43,4 +48,34 @@ class Girl: Mappable{
         time         <- map["time"]
         title        <- map["title"]
     }
+    
+    // 模拟请求加入收藏
+    func requestFavoriteOrNot()
+    {
+        rx_favorite.value = !rx_favorite.value
+        switch rx_favorite.value {
+        case true:
+            User.shareUser.favorite = User.shareUser.favorite.filter{$0.id != id}
+        case false:
+            User.shareUser.favorite.append(self)
+        }
+        print("rx_favorite.value -->id \(id)--\(rx_favorite.value)");
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

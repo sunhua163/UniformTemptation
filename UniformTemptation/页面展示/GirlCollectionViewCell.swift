@@ -8,23 +8,48 @@
 
 import UIKit
 import Kingfisher
+import RxSwift
 
 class GirlCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var discribe: UILabel!
     @IBOutlet weak var icon: UIImageView!
     
+    @IBOutlet weak var favoriteButton: UIButton!
+    
+    private var bag = DisposeBag()
+    
     @IBAction func addToFavorite(_ sender: UIButton) {
+        
+        sender.isSelected = !sender.isSelected
+        
         
         
     }
     
-    var girl : Girl?{
-        didSet{
-            if let myGirl = girl{
-                discribe.text = myGirl.title
-                icon.kf.setImage(with: URL(string: myGirl.img_url))
-            }
-        }
+    func fillData(girl:Girl)
+    {
+        
+            discribe.text = girl.title
+            icon.kf.setImage(with: URL(string: girl.img_url))
+            
+            // 观察 girl 是否被收藏，决定 favoriteButton 的选择状态
+            girl
+                .rx_favorite
+                .asObservable()
+                // MainScheduler.instance 更改UI 在主线程上
+                // ConcurrentMainScheduler.instance 默认当前线程
+                .observeOn(MainScheduler.instance)
+                .bindTo(favoriteButton.rx.isSelected)
+                .addDisposableTo(bag)
+            
+            
+            // 点击 button
+            favoriteButton
+                .rx
+                .tap
+                .subscribe(onNext: {
+                    girl.requestFavoriteOrNot()
+                }).addDisposableTo(bag)
     }
 }

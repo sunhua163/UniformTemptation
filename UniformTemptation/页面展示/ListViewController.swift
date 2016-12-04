@@ -31,7 +31,8 @@ class ListViewController: BaseViewController {
         viewModel.rx_dataSource.configureCell = { dataSource, collectionView, indexPath, girl in
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! GirlCollectionViewCell
-            cell.girl = girl
+//            cell.girl = girl
+            cell.fillData(girl: girl)
             return cell
         }
         // 将数据绑定到collectionview上

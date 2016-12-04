@@ -16,4 +16,5 @@ target 'UniformTemptation' do
     pod 'RxOptional'
     pod 'AlamofireObjectMapper'
     
+#    pod 'RealmSwift'
 end

@@ -21,6 +21,11 @@
 		40B36A431DC44AAE006DB714 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B36A421DC44AAE006DB714 /* Constants.swift */; };
 		40B36A451DC44D3B006DB714 /* GlobalMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B36A441DC44D3B006DB714 /* GlobalMethods.swift */; };
 		40EDE5D21DC4B67F00ECF0F6 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EDE5D11DC4B67F00ECF0F6 /* ListViewModel.swift */; };
+		451816AE1DF3A11C000E932A /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451816AC1DF3A11C000E932A /* UIButton.swift */; };
+		451816AF1DF3A11C000E932A /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451816AD1DF3A11C000E932A /* UIImage.swift */; };
+		451816B11DF3A128000E932A /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451816B01DF3A128000E932A /* FileManager.swift */; };
+		45713DAC1DE1964D00F2B2C1 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45713DAB1DE1964D00F2B2C1 /* FavoriteViewController.swift */; };
+		45713DAE1DE1E4D400F2B2C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45713DAD1DE1E4D400F2B2C1 /* User.swift */; };
 		9CB0A9E4FF227693B3048200 /* Pods_UniformTemptation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623C1D83FEBA6854CE2922E9 /* Pods_UniformTemptation.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +48,11 @@
 		40B36A421DC44AAE006DB714 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		40B36A441DC44D3B006DB714 /* GlobalMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalMethods.swift; sourceTree = "<group>"; };
 		40EDE5D11DC4B67F00ECF0F6 /* ListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		451816AC1DF3A11C000E932A /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		451816AD1DF3A11C000E932A /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		451816B01DF3A128000E932A /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		45713DAB1DE1964D00F2B2C1 /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		45713DAD1DE1E4D400F2B2C1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		623C1D83FEBA6854CE2922E9 /* Pods_UniformTemptation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniformTemptation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B28CCF18AA3182B15D7F25A /* Pods-Share-UniformTemptation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Share-UniformTemptation.release.xcconfig"; path = "Pods/Target Support Files/Pods-Share-UniformTemptation/Pods-Share-UniformTemptation.release.xcconfig"; sourceTree = "<group>"; };
 		73D41775C92187777F8AF880 /* Pods-UniformTemptation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniformTemptation.release.xcconfig"; path = "Pods/Target Support Files/Pods-UniformTemptation/Pods-UniformTemptation.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +107,8 @@
 				4021F29D1DC417C90084710D /* AppDelegate.swift */,
 				40713BBA1DC480EB002DF5B8 /* 页面展示 */,
 				40B36A441DC44D3B006DB714 /* GlobalMethods.swift */,
+				451816AB1DF3A11C000E932A /* 类扩展 */,
+				45713DAD1DE1E4D400F2B2C1 /* User.swift */,
 				40B36A421DC44AAE006DB714 /* Constants.swift */,
 				4021F2A11DC417C90084710D /* Main.storyboard */,
 				4021F2A41DC417C90084710D /* Assets.xcassets */,
@@ -121,11 +133,22 @@
 			children = (
 				40713BBB1DC480EB002DF5B8 /* ViewController.swift */,
 				40713BBD1DC4811E002DF5B8 /* ListViewController.swift */,
+				45713DAB1DE1964D00F2B2C1 /* FavoriteViewController.swift */,
 				40019E9E1DC4FEF8009142AA /* GirlCollectionViewCell.swift */,
 				40EDE5D11DC4B67F00ECF0F6 /* ListViewModel.swift */,
 				40713BBF1DC48326002DF5B8 /* Girl.swift */,
 			);
 			path = "页面展示";
+			sourceTree = "<group>";
+		};
+		451816AB1DF3A11C000E932A /* 类扩展 */ = {
+			isa = PBXGroup;
+			children = (
+				451816AC1DF3A11C000E932A /* UIButton.swift */,
+				451816AD1DF3A11C000E932A /* UIImage.swift */,
+				451816B01DF3A128000E932A /* FileManager.swift */,
+			);
+			path = "类扩展";
 			sourceTree = "<group>";
 		};
 		BC042AAC7C3F8CD56DC2AA87 /* Frameworks */ = {
@@ -260,16 +283,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45713DAE1DE1E4D400F2B2C1 /* User.swift in Sources */,
 				40EDE5D21DC4B67F00ECF0F6 /* ListViewModel.swift in Sources */,
 				40713BB91DC47F91002DF5B8 /* MainViewController.swift in Sources */,
 				4021F29E1DC417C90084710D /* AppDelegate.swift in Sources */,
 				40019E9F1DC4FEF8009142AA /* GirlCollectionViewCell.swift in Sources */,
 				40713BC01DC48326002DF5B8 /* Girl.swift in Sources */,
+				451816AF1DF3A11C000E932A /* UIImage.swift in Sources */,
+				451816B11DF3A128000E932A /* FileManager.swift in Sources */,
 				40B36A431DC44AAE006DB714 /* Constants.swift in Sources */,
 				40713BB71DC47F91002DF5B8 /* BaseNavigationController.swift in Sources */,
 				40B36A451DC44D3B006DB714 /* GlobalMethods.swift in Sources */,
 				40713BBC1DC480EB002DF5B8 /* ViewController.swift in Sources */,
 				40713BBE1DC4811E002DF5B8 /* ListViewController.swift in Sources */,
+				451816AE1DF3A11C000E932A /* UIButton.swift in Sources */,
+				45713DAC1DE1964D00F2B2C1 /* FavoriteViewController.swift in Sources */,
 				40713BB81DC47F91002DF5B8 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
