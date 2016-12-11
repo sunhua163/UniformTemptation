@@ -36,12 +36,11 @@ class Girl: Mappable{
     required init?(map: Map) {
         
     }
-    
     func mapping(map: Map) {
         count        <- map["count"]
         fcount       <- map["fcount"]
         galleryclass <- map["galleryclass"]
-        id           <- map["id"]
+        id           <- (map["id"], intToStringTransform)
         img          <- map["img"]
         rcount       <- map["rcount"]
         size         <- map["size"]
@@ -55,9 +54,9 @@ class Girl: Mappable{
         rx_favorite.value = !rx_favorite.value
         switch rx_favorite.value {
         case true:
-            User.shareUser.favorite = User.shareUser.favorite.filter{$0.id != id}
-        case false:
             User.shareUser.favorite.append(self)
+        case false:
+            User.shareUser.favorite = User.shareUser.favorite.filter{$0.id != id}
         }
         print("rx_favorite.value -->id \(id)--\(rx_favorite.value)");
     }

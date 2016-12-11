@@ -28,9 +28,9 @@ class DataBase{
         
         let arr = FileManager.dataArrayForFileName(name: fileName)
         
-        let girls = Mapper<Girl>().mapArray(JSONArray: arr as! [[String : Any]])
+//        let girls = Mapper<Girl>().mapArray(JSONArray: arr as! [[String : Any]])
         
-        return girls
+        return arr == nil ? nil : Mapper<Girl>().mapArray(JSONArray: arr as! [[String : Any]])
     }()
     
     // save list
@@ -38,7 +38,7 @@ class DataBase{
     {
         if let list = DataBase.shareDataBase.girlList{
             let arr = list.toJSON() as NSArray
-            print("当前存储了数据\(arr)")
+            print(" save girl list detail -> \(arr)")
             FileManager.saveArrayDataForFileName(data: arr, name: DataBase.fileName)
         }
     }

@@ -23,8 +23,11 @@ class GirlCollectionViewCell: UICollectionViewCell {
         
         sender.isSelected = !sender.isSelected
         
-        
-        
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        bag = DisposeBag()
     }
     
     func fillData(girl:Girl)
@@ -42,9 +45,7 @@ class GirlCollectionViewCell: UICollectionViewCell {
                 .observeOn(MainScheduler.instance)
                 .bindTo(favoriteButton.rx.isSelected)
                 .addDisposableTo(bag)
-            
-            
-            // 点击 button
+        
             favoriteButton
                 .rx
                 .tap

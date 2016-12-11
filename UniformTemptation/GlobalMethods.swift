@@ -12,6 +12,19 @@ import ObjectMapper
 import RxSwift
 import Alamofire
 
+// ObjectMapper support transform DIY
+let intToStringTransform = TransformOf<String ,Int>(fromJSON: { JSON -> String? in
+    if let JSON = JSON {
+        return String(JSON)
+    }
+    return nil
+}) { obj -> Int? in
+    if let obj = obj {
+        return Int(obj)
+    }
+    return nil
+}
+
 extension Mappable{
     static func requestForArray(router: Router)-> Observable<([Self]?, HTTPURLResponse?)>? {
         
