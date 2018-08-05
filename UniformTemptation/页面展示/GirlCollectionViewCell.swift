@@ -32,7 +32,6 @@ class GirlCollectionViewCell: UICollectionViewCell {
     
     func fillData(girl:Girl)
     {
-        
             discribe.text = girl.title
             icon.kf.setImage(with: URL(string: girl.img_url))
             

@@ -36,7 +36,7 @@ class ListViewModel{
             self.rx_girls.value = girlArr
         }else{
             Girl
-                .requestForArray(router: Router.GirlList)?
+                .requestForArray(router: .girlList)?
                 .retry(3)
                 .subscribe(onNext: {[weak self] (arr,response) in
                     if let SELF = self , let itemsArr = arr{

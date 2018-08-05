@@ -28,14 +28,17 @@ let intToStringTransform = TransformOf<String ,Int>(fromJSON: { JSON -> String? 
 extension Mappable{
     static func requestForArray(router: Router)-> Observable<([Self]?, HTTPURLResponse?)>? {
         
-        do{
-            
-            let url = try router.rawValue.asURL()
-            let request = URLRequest(url: url)
-            return rx_request(router: request)
-            
-        }catch{}
-        
+        if let urlString = router.rawValue.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) {
+            do{
+                let url = try urlString.asURL()
+                let request = URLRequest(url: url)
+                return rx_request(router: request)
+                
+            }catch{
+                
+                print("url不能转换为链接")
+            }
+        }
         return nil
     }
 }
@@ -48,7 +51,7 @@ func rx_request<T:Mappable>(router: URLRequestConvertible)-> Observable<([T]?, H
     return Observable
         .create{ observer in
             
-            let _request = request(router).responseArray(keyPath: "tngou") { (response:DataResponse<[T]>) in
+            let _request = request(router).responseArray(keyPath: "data") { (response:DataResponse<[T]>) in
                 UIApplication.shared.isNetworkActivityIndicatorVisible = false
                 
                 if response.result.error != nil  {
