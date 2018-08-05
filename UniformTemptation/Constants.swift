@@ -30,7 +30,8 @@ let ScreenHeight = UIScreen.main.bounds.height
 let ScreenScale = UIScreen.main.scale
 
 enum Router:String{
-    case girlList = "http://image.baidu.com/channel/listjson?pn=0&rn=30&tag1=美女&tag2=全部&ftags=小清新&ie=utf8"
+    case girlList = "http://image.baidu.com/channel/listjson?pn=0&rn=30&tag1=美女&tag2=全部&ie=utf8"
+    case pureGirlList = "http://image.baidu.com/channel/listjson?pn=0&rn=30&tag1=美女&tag2=全部&ftags=小清新&ie=utf8"
 }
 
 

@@ -10,16 +10,17 @@ import Foundation
 import RxSwift
 import RxDataSources
 import ObjectMapper
-class ListViewModel{
+class ListViewModel {
     
 //    let rx_girls = Variable<[SectionModel<String, Girl>]>([])
 //    var haveLoadData = PublishSubject<Bool>()
     
-    
+    //  Variable 有一个 value 属性，我们改变这个 value 属性的值就相当于调用一般 Subjects 的 onNext() 方法，而这个最新的 onNext() 的值就被保存在 value 属性里了，直到我们再次修改它
     let rx_girls = Variable<[Girl]>([])
     private let bag = DisposeBag()
     
-    
+    // 创建数据源
+    // SectionModel带有一个String作为section的名字，Girl类作为item的类型
     let rx_dataSource = RxCollectionViewSectionedReloadDataSource<SectionModel<String, Girl>>()
     
     init() {

@@ -22,6 +22,8 @@
 		451816AE1DF3A11C000E932A /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451816AC1DF3A11C000E932A /* UIButton.swift */; };
 		451816AF1DF3A11C000E932A /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451816AD1DF3A11C000E932A /* UIImage.swift */; };
 		451816B11DF3A128000E932A /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451816B01DF3A128000E932A /* FileManager.swift */; };
+		456F26A02116BA4F00657849 /* PureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F269F2116BA4F00657849 /* PureController.swift */; };
+		456F26A22116BB2C00657849 /* PureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F26A12116BB2C00657849 /* PureViewModel.swift */; };
 		45713DAE1DE1E4D400F2B2C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45713DAD1DE1E4D400F2B2C1 /* User.swift */; };
 		45B224B01DFC5175000ED9A3 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B224AC1DFC5175000ED9A3 /* FavoriteViewController.swift */; };
 		45B224B11DFC5175000ED9A3 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B224AE1DFC5175000ED9A3 /* ListViewController.swift */; };
@@ -50,6 +52,8 @@
 		451816AC1DF3A11C000E932A /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		451816AD1DF3A11C000E932A /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		451816B01DF3A128000E932A /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		456F269F2116BA4F00657849 /* PureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PureController.swift; sourceTree = "<group>"; };
+		456F26A12116BB2C00657849 /* PureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PureViewModel.swift; sourceTree = "<group>"; };
 		45713DAD1DE1E4D400F2B2C1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		45B224AC1DFC5175000ED9A3 /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		45B224AE1DFC5175000ED9A3 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 		40713BBA1DC480EB002DF5B8 /* 页面展示 */ = {
 			isa = PBXGroup;
 			children = (
+				456F269E2116B92800657849 /* 分类 */,
 				45B224AB1DFC5175000ED9A3 /* 收藏 */,
 				45B224AD1DFC5175000ED9A3 /* 首页 */,
 				40713BBB1DC480EB002DF5B8 /* ViewController.swift */,
@@ -150,6 +155,15 @@
 				451816B01DF3A128000E932A /* FileManager.swift */,
 			);
 			path = "类扩展";
+			sourceTree = "<group>";
+		};
+		456F269E2116B92800657849 /* 分类 */ = {
+			isa = PBXGroup;
+			children = (
+				456F269F2116BA4F00657849 /* PureController.swift */,
+				456F26A12116BB2C00657849 /* PureViewModel.swift */,
+			);
+			path = "分类";
 			sourceTree = "<group>";
 		};
 		45B224AB1DFC5175000ED9A3 /* 收藏 */ = {
@@ -313,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45713DAE1DE1E4D400F2B2C1 /* User.swift in Sources */,
+				456F26A22116BB2C00657849 /* PureViewModel.swift in Sources */,
 				40713BB91DC47F91002DF5B8 /* MainViewController.swift in Sources */,
 				4021F29E1DC417C90084710D /* AppDelegate.swift in Sources */,
 				40019E9F1DC4FEF8009142AA /* GirlCollectionViewCell.swift in Sources */,
@@ -327,6 +342,7 @@
 				40B36A451DC44D3B006DB714 /* GlobalMethods.swift in Sources */,
 				45B224B01DFC5175000ED9A3 /* FavoriteViewController.swift in Sources */,
 				40713BBC1DC480EB002DF5B8 /* ViewController.swift in Sources */,
+				456F26A02116BA4F00657849 /* PureController.swift in Sources */,
 				451816AE1DF3A11C000E932A /* UIButton.swift in Sources */,
 				40713BB81DC47F91002DF5B8 /* BaseViewController.swift in Sources */,
 			);

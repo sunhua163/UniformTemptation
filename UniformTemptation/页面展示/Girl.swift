@@ -49,7 +49,7 @@ class Girl: Mappable{
         case false:
             User.shareUser.favorite = User.shareUser.favorite.filter{$0.id != id}
         }
-        print("rx_favorite.value -->id \(id)--\(rx_favorite.value)");
+        print("当前收藏列表 \(User.shareUser.favorite)- 更新美女为 -\(id) 新状态-\(rx_favorite.value)")
     }
 }
 
