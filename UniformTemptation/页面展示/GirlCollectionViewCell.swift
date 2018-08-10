@@ -19,15 +19,15 @@ class GirlCollectionViewCell: UICollectionViewCell {
     
     private var bag = DisposeBag()
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        bag = DisposeBag()
+    }
+    
     @IBAction func addToFavorite(_ sender: UIButton) {
         
         sender.isSelected = !sender.isSelected
         
-    }
-    
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        bag = DisposeBag()
     }
     
     func fillData(girl:Girl)

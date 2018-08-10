@@ -21,6 +21,7 @@ class ListViewModel {
     
     // 创建数据源
     // SectionModel带有一个String作为section的名字，Girl类作为item的类型
+    // 这里我们将 data 属性变成一个可观察序列对象（Observable Squence），而对象当中的内容和我们之前在数组当中所包含的内容是完全一样的
     let rx_dataSource = RxCollectionViewSectionedReloadDataSource<SectionModel<String, Girl>>()
     
     init() {

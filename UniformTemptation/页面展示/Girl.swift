@@ -15,6 +15,8 @@ import RxSwift
 
 class Girl: Mappable{
     
+    static let rx_favoriteStatuseChange = PublishSubject<(Girl,Bool)>()
+    
     var id                    = ""
     var img_url               = ""
     var desc                  = ""
@@ -25,10 +27,16 @@ class Girl: Mappable{
     var title                 = ""
     
     var rx_favorite  = Variable(false)
+    fileprivate let bag = DisposeBag()
+    
+    init() {
+        subscribFavoriteChange()
+    }
     
     required init?(map: Map) {
-        
+        subscribFavoriteChange()
     }
+    
     func mapping(map: Map) {
         id            <- map["id"]
         img_url       <- map["image_url"]
@@ -39,10 +47,23 @@ class Girl: Mappable{
         title         <- map["desc"]
     }
     
+    // 订阅收藏状态改变
+    private func subscribFavoriteChange() {
+        Girl.rx_favoriteStatuseChange
+            .subscribe(onNext: { [weak self] (girl, _) in
+                if let SELF = self, SELF == girl, SELF !== girl {
+                    SELF.rx_favorite.value = girl.rx_favorite.value
+                }
+            })
+            .addDisposableTo(bag)
+    }
+    
     // 模拟请求加入收藏
     func requestFavoriteOrNot()
     {
-        rx_favorite.value = !rx_favorite.value
+        let newState = !rx_favorite.value
+        rx_favorite.value = newState
+        Girl.rx_favoriteStatuseChange.onNext((self, newState))
         switch rx_favorite.value {
         case true:
             User.shareUser.favorite.append(self)
@@ -53,6 +74,9 @@ class Girl: Mappable{
     }
 }
 
+func ==(lhs: Girl, rhs: Girl)-> Bool {
+    return lhs.id == rhs.id
+}
 
 //class Girl: Mappable{
 //    var count        = ""
