@@ -1,8 +1,7 @@
 # UniformTemptation
 MVVM Demo
 目前只有微量的Rx响应式代码
-此代码只是简单的写啦一个collectionview界面
+此代码只是简单的写啦两个collectionview界面用于展示 关于解决多界面出现同一个需要收藏的item如何响应的问题 
 时间有限，我会接着完善
-后面代码中将出现Realm数据库
-以及添加到favorite的功能，
+后面代码中将出现Realm数据库(一个比Core Data/SQLite强悍许多的数据库)
 写完之后将会完全展示出函数响应式编程的强大
